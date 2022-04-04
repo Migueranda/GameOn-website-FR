@@ -185,7 +185,7 @@ main {
 
 .modal-body {
   padding: 15px 8%;
-  margin: 15px auto;
+  margin: 15px auto;  
 }
 
 label {
@@ -420,8 +420,9 @@ input[data-error]::after {
   color: #fff;
   position: relative;
   text-align: left;
-  min-width: 424px;
+  min-width: 424px; 
 }
+
 .hero-content::after {
   content: "";
   width: 100%;
@@ -439,6 +440,7 @@ input[data-error]::after {
   font-size: 6rem;
   font-weight: normal;
   white-space: nowrap;
+ 
 }
 .hero-text {
   width: 146%;
@@ -487,6 +489,8 @@ footer {
     background: #fff;
     color: #000;
     padding: 20px;
+  
+   
   }
   .hero-content::after {
     content: unset;
@@ -526,4 +530,7 @@ footer {
     opacity: 1;
   }
 }
-
+/* ____________ */
+#message_submit{
+  display: none;
+}
