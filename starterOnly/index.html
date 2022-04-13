@@ -52,20 +52,22 @@
         </button>
       </div>
       <!--  -->
-      <div id="message_submit">Merci ! Votre réservation a été reçue !</div>
+      <div id="message_submit">Merci ! Votre réservation a été reçue !</div><!-- "id" pour afficher message après submission 
+      du formulaire-->
       <!--  -->
       <div class="bground">
         <div class="content">
           <span class="close"></span>
           <div class="modal-body">
-            <form 
+            <form   
               name="reserve"
               action="index.html"
               method="get"
-              onsubmit="return validate();"       
+              id="formulaire"                   
             >
               <div
-                class="formData" data-error="Le prénom doit avoir deux caractères" id="form-data-first">
+                 class="formData" data-error="Le prénom doit avoir deux caractères" id="form-data-first"><!--"Ajout data error"  "id"pour 
+                  afficher message d'erreur -->                
                 <label for="first">Prénom</label><br>
                 <input
                   class="text-control"
@@ -75,7 +77,8 @@
                 /><br>
               </div>
               <div
-                class="formData" data-error="Le nom doit avoir deux caractères" id="form-data-last">
+                class="formData" data-error="Le nom doit avoir deux caractères" id="form-data-last"><!--"Ajout data error"  "id"pour 
+                  afficher message d'erreur -->
                 <label for="last">Nom</label><br>
                 <input
                   class="text-control"
@@ -85,7 +88,8 @@
                 /><br>
               </div>
               <div
-                class="formData" data-error="L'adresse électronique n'est pas valide" id="form-data-email">
+                class="formData" data-error="L'adresse électronique n'est pas valide" id="form-data-email"><!--"Ajout data error"  "id"pour 
+                  afficher message d'erreur -->
                 <label for="email">E-mail</label><br>
                 <input
                   class="text-control"
@@ -95,7 +99,7 @@
                 /><br>
               </div>
               <div
-                class="formData">
+                class="formData" data-error=" Veuillez inserer une date de naissance" id="form-data-datenaissance">
                 <label for="birthdate">Date de naissance</label><br>
                 <input
                   class="text-control"
@@ -105,13 +109,15 @@
                 /><br>
               </div>
               <div
-                class="formData"  data-error=" Veuillez saisir une valeur numérique est saisie" id="form-data-nombretournois">
+                class="formData"  data-error=" Veuillez saisir une valeur numérique est saisie" id="form-data-nombretournois"><!--"Ajout data error"  "id"pour 
+                  afficher message d'erreur -->
                 <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99"/> 
               </div>
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
               <div
-                class="formData" data-error="Veuillez selectioner le tournoi de votre choix" id="form-data-locationtournois">
+                class="formData" data-error="Veuillez selectioner le tournoi de votre choix" id="form-data-locationtournois"><!--"Ajout data error"  "id"pour 
+                  afficher message d'erreur -->
                 <input
                   class="checkbox-input"
                   type="radio"
@@ -181,7 +187,8 @@
               </div>
 
               <div
-                class="formData" data-error="Veuillez Acepter les conditions d'utilisation" id="form-data-condition-utilisation">
+                class="formData" data-error="Veuillez Acepter les conditions d'utilisation" id="form-data-condition-utilisation"><!--"Ajout data error"  "id"pour 
+                  afficher message d'erreur -->
                 <input
                   class="checkbox-input"
                   type="checkbox"
